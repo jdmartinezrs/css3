@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
 }
 body{
   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 80px;
+  font-style: normal;
+
 }
 .contenedor{
   max-width: 1200px;
@@ -30,11 +36,56 @@ body{
 .card h2{
   margin-top: 2px;
   margin-bottom: 8px;
-  color: #373737;
+  color: #E07004;
   text-align: center;
 }
 .card p{
   font-size: 16px;
-  color: #515151;
-  text-align: center;
+ color: #373737;
+}
+
+.card-1{
+
+  background-color: rgb(230, 170, 100);
+
+}
+
+.card-2{
+ 
+  background-color: rgb(255, 90, 190);
+
+}
+
+.card-3{
+
+  background-color: rgb(55, 120, 210);
+
+}
+
+.card-4{
+  
+  background-color: rgb(80, 70, 50);
+
+}
+
+.card-5{
+ 
+  background-color: rgb( 150, 190, 20);
+ 
+}
+
+.card-6{
+  background-color: rgba(60, 90, 15, 0.7);
+}
+
+
+
+.card-8{
+background-image: radial-gradient(circle, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.card-9{
+  text-transform:capitalize;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 2px black;
 }
