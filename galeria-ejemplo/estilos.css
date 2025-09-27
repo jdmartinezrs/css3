@@ -11,10 +11,11 @@ body{
   font-optical-sizing: auto;
   font-weight: 80px;
   font-style: normal;
+  height: 100vh;
 
 }
 .contenedor{
-  max-width: 1200px;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -27,10 +28,12 @@ body{
   border: solid 0.5px #cbc3c3;
   display: inline-block;
 }
+
 .card img{
   display: block;
   max-height: 280px;
   margin: 16px auto;
+  object-fit: scale-down;
   filter: drop-shadow(2px 0px 8px #515151);
 }
 .card h2{
@@ -39,15 +42,38 @@ body{
   color: #E07004;
   text-align: center;
 }
-.card p{
-  font-size: 16px;
- color: #373737;
-}
+/*
 
-.card-1{
+
+.card {
+  font-size: 1em;
+  padding: 1.5em;
+  margin: 2.5em;
+
+}
+*/
+/*
+.card-1 {
 
   background-color: rgb(230, 170, 100);
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 
+}*/
+/*
+.card-1 img{
+  width: 20px;
+
+}
+
+.card-2 img{
+  width: 20em;
+}
+
+.card p{
+
+font-size: 2rem;
 }
 
 .card-2{
@@ -89,3 +115,4 @@ background-image: radial-gradient(circle, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #
   letter-spacing: 10px;
   text-shadow: 1px 1px 2px black;
 }
+  */
