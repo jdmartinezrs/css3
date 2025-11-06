@@ -1,118 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-*{
-  margin: 0;
-  padding: 0;
-}
-body{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 80px;
-  font-style: normal;
-  height: 100vh;
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
 
-}
-.contenedor{
-  width: 90vw;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-.card{
-  width: 320px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-  border: solid 0.5px #cbc3c3;
-  display: inline-block;
-}
+    .contenedor {
+      width: 90%;
+      max-width: 1400px;
+      margin: 40px auto;
+      text-align: center;
+    }
 
-.card img{
-  display: block;
-  max-height: 280px;
-  margin: 16px auto;
-  object-fit: scale-down;
-  filter: drop-shadow(2px 0px 8px #515151);
-}
-.card h2{
-  margin-top: 2px;
-  margin-bottom: 8px;
-  color: #E07004;
-  text-align: center;
-}
-/*
+    .card {
+      width: 320px;
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      vertical-align: top;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
 
-.card {
-  font-size: 1em;
-  padding: 1.5em;
-  margin: 2.5em;
+    .card img {
+      display: block;
+      width: 100%;
+      max-height: 280px;
+      margin: 0 auto 16px;
+      object-fit: contain;
+      filter: drop-shadow(2px 2px 8px rgba(81, 81, 81, 0.3));
+      border-radius: 8px;
+    }
 
-}
-*/
-/*
-.card-1 {
+    .card h2 {
+      margin-bottom: 8px;
+      color: #E07004;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
 
-  background-color: rgb(230, 170, 100);
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    .card p {
+      color: #666;
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
 
-}*/
-/*
-.card-1 img{
-  width: 20px;
-
-}
-
-.card-2 img{
-  width: 20em;
-}
-
-.card p{
-
-font-size: 2rem;
-}
-
-.card-2{
- 
-  background-color: rgb(255, 90, 190);
-
-}
-
-.card-3{
-
-  background-color: rgb(55, 120, 210);
-
-}
-
-.card-4{
   
-  background-color: rgb(80, 70, 50);
+    @media (max-width: 992px) {
+      .contenedor {
+        width: 95%;
+      }
 
-}
+      .card {
+        width: 45%;
+        margin: 8px;
+      }
 
-.card-5{
- 
-  background-color: rgb( 150, 190, 20);
- 
-}
+      .card img {
+        max-height: 240px;
+      }
 
-.card-6{
-  background-color: rgba(60, 90, 15, 0.7);
-}
+      .card h2 {
+        font-size: 1.2rem;
+      }
+    }
 
+   
+    @media (max-width: 767px) {
+      .contenedor {
+        width: 96%;
+        margin: 20px auto;
+      }
 
+      .card {
+        width: 47%;
+        margin: 6px;
+        padding: 15px;
+      }
 
-.card-8{
-background-image: radial-gradient(circle, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-}
+      .card img {
+        max-height: 200px;
+      }
 
-.card-9{
-  text-transform:capitalize;
-  letter-spacing: 10px;
-  text-shadow: 1px 1px 2px black;
-}
-  */
+      .card h2 {
+        font-size: 1.1rem;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+      }
+    }
+
+   
+    @media (max-width: 480px) {
+      .contenedor {
+        width: 95%;
+      }
+
+      .card {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+      }
+
+      .card img {
+        max-height: 280px;
+      }
+
+      .card h2 {
+        font-size: 1.3rem;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+      }
+    }
